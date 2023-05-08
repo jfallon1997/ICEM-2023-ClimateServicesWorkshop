@@ -73,19 +73,19 @@ Note: RISE is only compatible with `jupyter notebook` and will not work with `ju
 #### Option 1: Export to HTML
 
 ```zsh
-jupyter nbconvert notebook-name.ipynb --to-slides --reveal-prefix reveal.js
+jupyter nbconvert "ClimServ Intro.ipynb" --to slides --reveal-prefix reveal.js
 ```
 
 or if `reveal.js` is not installed:
 
 ```zsh
-jupyter nbconvert notebook-name.ipynb --to-slides --reveal-prefix "http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0"
+jupyter nbconvert "ClimServ Intro.ipynb" --to slides --reveal-prefix "http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0"
 ```
 
 #### Option 2: Export to PDF
 
 ```zsh
-jupyter nbconvert --to slides your_talk.ipynb --post serve
+jupyter nbconvert --to slides "ClimServ Intro.ipynb" --post serve
 ```
 
-Add `?print-pdf` to the query `url` and save the destination `pdf` file
+Add `?print-pdf` to the query `url` and save the destination `pdf` file, or alternatively open the page and print to PDF
