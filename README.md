@@ -1,21 +1,23 @@
 # ICEM-2023-ClimateServicesWorkshop
 ICEM 2023 workshop on Climate Services
 
-To view this notebook as a RISE presentation (recommended), open on mybinder.org (todo - need to make this repo public for this to work)
+To view this notebook as a RISE presentation (recommended), open on mybinder.org (todo - need to make this repo public for this to work). The slides may alternatively be viewed as PDF or HTML, with limited functionality (see files in this repo)
 
-Full running instructions todo...
+Instructions are currently a work in progress.
+
+Relevant links are kept up to date at [https://linktr.ee/ICEM23ClimateServices](https://linktr.ee/ICEM23ClimateServices)
 
 ## Python setup
 
-### Method 1: using Google colabs or mybinder.org
+### Method 1: mybinder.org
 
-**recommended installation method**
+**recommended method**
 
-todo...
+No download or installation setup is needed, simply visit [URL to be created TODO](https://example.org) for an interactive copy of the workshop
 
 ### Method 2: using conda
 
-**(use this installation method if running on local machine with conda/mamba already installed)**
+**(use this installation method if conda/mamba already installed and not using mybinder.org)**
 
 Alternatively, install the packages with [conda](https://docs.conda.io/en/latest) or [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html):
 
@@ -33,11 +35,17 @@ conda activate icem
 
 ### Method 3: using pip
 
-**(use this installation method if running on local machine without conda installation)**
+**(use this installation method if running without conda installation and not on mybinder.org)**
 
 Please ensure you have the following packages installed:
 
 ```python
+# windows
+py -m venv icem
+source ./icem/bin/activate
+py -m pip install jupyterlab pandas xarray
+
+# mac/linux
 python3 -m venv icem
 source icem/bin/activate
 python3 -m pip install jupyterlab pandas xarray
@@ -46,6 +54,9 @@ python3 -m pip install jupyterlab pandas xarray
 And in future, access the packages using
 
 ```zsh
+# windows
+source ./icem/bin/activate
+# mac/linux
 source icem/bin/activate
 ```
 For more help on pip, see https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments
@@ -57,11 +68,13 @@ Use RISE to view the notebook as a series of slides (as used in the workshop).
 
 ### Installation
 
-To install RISE:
+To install RISE (ensure the correct venv is activated first, see previous instructions):
 
 ```zsh
-pip install jsonschema'[format-nongpl]'
-pip install rise
+# windows
+py -m pip install rise
+# mac/linux
+python3 -m pip install rise
 ```
 
 Full usage available at https://rise.readthedocs.io/en/stable/usage.html
