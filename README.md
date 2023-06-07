@@ -1,27 +1,34 @@
-# ICEM-2023-ClimateServicesWorkshop
-ICEM 2023 workshop on Climate Services
-
-To view this notebook as a RISE presentation (recommended), open on mybinder.org (todo - need to make this repo public for this to work). The slides may alternatively be viewed as PDF or HTML, with limited functionality (see files in this repo)
+# ICEM 2023 workshop on Climate Services
 
 Instructions are currently a work in progress.
 
-Relevant links are kept up to date at [https://linktr.ee/ICEM23ClimateServices](https://linktr.ee/ICEM23ClimateServices)
+For more information on the workshop and related pages, visit [https://linktr.ee/ICEM23ClimateServices](https://linktr.ee/ICEM23ClimateServices)
+
+## Using the notebook
+
+~~Recmomended method: visit [https://mybinder.org](https://mybinder.org)~~ (**todo - need to make this repo public before the notebook can be published on mybinder.org**).
+
+Advanced method: follow the instructions below to setup python, download data, and optionally install RISE (for presentation viewing mode). Once setup, the notebook can be viewed by running:
+
+```sh
+jupyter notebook "ClimServ Intro.ipynb"
+```
 
 ## Python setup
 
 ### Method 1: mybinder.org
 
-**recommended method**
+**recommended method (run via webapp, no installation required)**
 
-No download or installation setup is needed, simply visit [URL to be created TODO](https://example.org) for an interactive copy of the workshop
+~~No download or installation setup is needed, simply visit [URL to be created TODO](https://example.org) for an interactive copy of the workshop~~ (**todo - need to make this repo public before the notebook can be published on mybinder.org**)
 
 ### Method 2: using conda
 
-**(use this installation method if conda/mamba already installed and not using mybinder.org)**
+**(use this installation method if you are familiar with using conda)**
 
-Alternatively, install the packages with [conda](https://docs.conda.io/en/latest) or [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html):
+Ensure that you install the required packages with [conda](https://docs.conda.io/en/latest) or [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html):
 
-```zsh
+```sh
 conda create -n icem
 conda activate icem
 conda install -c conda-forge jupyterlab pandas xarray
@@ -29,17 +36,17 @@ conda install -c conda-forge jupyterlab pandas xarray
 
 And in future access the packages using
 
-```zsh
+```sh
 conda activate icem
 ```
 
 ### Method 3: using pip
 
-**(use this installation method if running without conda installation and not on mybinder.org)**
+**(use this installation method if you are not familiar with using conda)**
 
 Please ensure you have the following packages installed:
 
-```python
+```sh
 # windows
 py -m venv icem
 source ./icem/bin/activate
@@ -53,7 +60,7 @@ python3 -m pip install jupyterlab pandas xarray
 
 And in future, access the packages using
 
-```zsh
+```sh
 # windows
 source ./icem/bin/activate
 # mac/linux
@@ -79,13 +86,13 @@ In the example notebook, we download `CSV` formatted dataset `E05_Hudson_South_W
 
 ## RISE
 
-Use RISE to view the notebook as a series of slides (as used in the workshop).
+Use RISE to view the notebook as a series of interactive slides (as in the workshop). Using RISE is completely optional - if skipped the notebook will fallback as a regular jupyter notebook.
 
 ### Installation
 
 To install RISE (ensure the correct venv is activated first, see previous instructions):
 
-```zsh
+```sh
 # windows
 py -m pip install rise
 # mac/linux
@@ -94,26 +101,26 @@ python3 -m pip install rise
 
 Full usage available at https://rise.readthedocs.io/en/stable/usage.html
 
-Note: RISE is only compatible with `jupyter notebook` and will not work with `jupyter labs` `visualcode` etc.
+Note: RISE is only compatible with `jupyter notebook` and will not yet work with `jupyter labs` `visualcode` etc.
 
 ### Slides export
 
 #### Option 1: Export to HTML
 
-```zsh
+```sh
 jupyter nbconvert "ClimServ Intro.ipynb" --to slides --reveal-prefix reveal.js
 ```
 
 or if `reveal.js` is not installed:
 
-```zsh
+```sh
 jupyter nbconvert "ClimServ Intro.ipynb" --to slides --reveal-prefix "http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0"
 ```
 
 #### Option 2: Export to PDF
 
-```zsh
-jupyter nbconvert --to slides "ClimServ Intro.ipynb" --post serve
+```sh
+jupyter nbconvert "ClimServ Intro.ipynb" --to slides --post serve
 ```
 
 Add `?print-pdf` to the query `url` and save the destination `pdf` file, or alternatively open the page and print to PDF
