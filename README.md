@@ -62,6 +62,21 @@ source icem/bin/activate
 For more help on pip, see https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments
 
 
+## Downloading Data
+
+### Reanalysis via NASA POWER DAVe
+
+NASA POWER DAVe can be accessed at https://power.larc.nasa.gov/beta/data-access-viewer
+
+In the example notebook, data spanning *2022-01-29* to *2023-01-28* at *039.48N*, *073.59W* is saved in `netCDF4` format as `datasets/POWER_Point_Hourly_20220129_20230128_039d48N_073d59W_LST.nc`, although different dates/regions may be used.
+
+### Observations LiDAR measurements
+
+LiDAR measurements are obtained from NYSERDA Floating LiDAR Buoy Data:
+https://oswbuoysny.resourcepanorama.dnv.com
+
+In the example notebook, we download `CSV` formatted dataset `E05_Hudson_South_West_10_min_avg_20220129_20230128.csv` and save in the directory `datasets/NYSERDA Floating LiDAR Buoy Data/`
+
 ## RISE
 
 Use RISE to view the notebook as a series of slides (as used in the workshop).
