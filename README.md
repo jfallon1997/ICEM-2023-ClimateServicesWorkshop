@@ -31,7 +31,7 @@ Ensure that you install the required packages with [conda](https://docs.conda.io
 ```sh
 conda create -n icem
 conda activate icem
-conda install -c conda-forge jupyterlab pandas xarray
+conda install -c conda-forge jupyterlab pandas xarray rioxarray scipy matplotlib rasterio
 ```
 
 And in future access the packages using
@@ -50,12 +50,12 @@ Please ensure you have the following packages installed:
 # windows
 py -m venv icem
 source ./icem/bin/activate
-py -m pip install jupyterlab pandas xarray
+py -m pip install jupyterlab pandas xarray rioxarray scipy matplotlib rasterio
 
 # mac/linux
 python3 -m venv icem
 source icem/bin/activate
-python3 -m pip install jupyterlab pandas xarray
+python3 -m pip install jupyterlab pandas xarray rioxarray scipy matplotlib rasterio
 ```
 
 And in future, access the packages using
