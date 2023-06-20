@@ -1,12 +1,14 @@
 # ICEM 2023 workshop on Climate Services
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb)
+
 Instructions are currently a work in progress.
 
 For more information on the workshop and related pages, visit [https://linktr.ee/ICEM23ClimateServices](https://linktr.ee/ICEM23ClimateServices)
 
 ## Using the notebook
 
-~~Recmomended method: visit [https://mybinder.org](https://mybinder.org)~~ (**todo - need to make this repo public before the notebook can be published on mybinder.org**).
+Recommended method: use the [interactive slides in the web browser (no additional setup required) via mybinder.org](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb)
 
 Advanced method: follow the instructions below to setup python, download data, and optionally install RISE (for presentation viewing mode). Once setup, the notebook can be viewed by running:
 
@@ -20,7 +22,7 @@ jupyter notebook "ClimServ Intro.ipynb"
 
 **recommended method (run via webapp, no installation required)**
 
-~~No download or installation setup is needed, simply visit [URL to be created TODO](https://example.org) for an interactive copy of the workshop~~ (**todo - need to make this repo public before the notebook can be published on mybinder.org**)
+Visit https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb
 
 ### Method 2: using conda
 
