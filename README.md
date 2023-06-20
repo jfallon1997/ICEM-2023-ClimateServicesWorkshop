@@ -8,9 +8,36 @@ For more information on the workshop and related pages, visit [https://linktr.ee
 
 ## Using the notebook
 
-Recommended method: use the [interactive slides in the web browser (no additional setup required) via mybinder.org](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb)
+### Recommended method
 
-Advanced method: follow the instructions below to setup python, download data, and optionally install RISE (for presentation viewing mode). Once setup, the notebook can be viewed by running:
+Use the [interactive slides in the web browser (no additional setup required) via mybinder.org](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb)
+
+### Advanced method:
+
+Follow the instructions below to setup python, download data, and optionally install RISE (for presentation viewing mode). 
+
+Once `python` is setup (see method 2 or method 3), clone this github repo:
+
+```sh
+cd path_to_my_preferred_directory
+git clone https://github.com/jfallon1997/ICEM-2023-ClimateServicesWorkshop.git
+cd ICEM-2023-ClimateServicesWorkshop
+```
+
+Ensure that your python environment is activated:
+
+```sh
+# method 2
+conda activate icem
+
+# alternatively, method 3
+# windows
+source ./icem/bin/activate
+# mac/linux
+source icem/bin/activate
+```
+
+and finally launch the notebook with:
 
 ```sh
 jupyter notebook "ClimServ Intro.ipynb"
@@ -33,7 +60,7 @@ Ensure that you install the required packages with [conda](https://docs.conda.io
 ```sh
 conda create -n icem
 conda activate icem
-conda install -c conda-forge jupyterlab pandas xarray rioxarray scipy matplotlib rasterio
+conda install -c conda-forge jupyter pandas xarray rioxarray scipy matplotlib rasterio
 ```
 
 And in future access the packages using
@@ -52,12 +79,12 @@ Please ensure you have the following packages installed:
 # windows
 py -m venv icem
 source ./icem/bin/activate
-py -m pip install jupyterlab pandas xarray rioxarray scipy matplotlib rasterio
+py -m pip install jupyter pandas xarray rioxarray scipy matplotlib rasterio
 
 # mac/linux
 python3 -m venv icem
 source icem/bin/activate
-python3 -m pip install jupyterlab pandas xarray rioxarray scipy matplotlib rasterio
+python3 -m pip install jupyter pandas xarray rioxarray scipy matplotlib rasterio
 ```
 
 And in future, access the packages using
