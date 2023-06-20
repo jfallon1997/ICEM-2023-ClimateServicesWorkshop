@@ -4,7 +4,7 @@ channels:
 dependencies:
   - python=3.11.4
   - numpy=1.25.0
-  - jupyter
+  - notebook=6.5.4
   - pandas=2.0.2
   - xarray=2023.5.0
   - rioxarray=0.14
