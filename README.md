@@ -13,7 +13,11 @@ For more information on the workshop and related pages, visit [https://linktr.ee
 
 ### Recommended method
 
-Use the interactive slides in the web browser (no additional setup required) [via mybinder.org](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb) or [via Google collabs](https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/ClimServ%20Intro.ipynb)
+Use the interactive slides in the web browser (no additional setup required) [via mybinder.org](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb) or [via Google collab](https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/ClimServ%20Intro.ipynb)
+
+Note: if using google collab, you will need to manually copy the
+[datasets](https://github.com/jfallon1997/ICEM-2023-ClimateServicesWorkshop/tree/main/datasets)
+folder from github, before running the notebook.
 
 ### Code snippets method
 
@@ -53,11 +57,15 @@ jupyter notebook "ClimServ Intro.ipynb"
 
 ## Python setup
 
-### Method 1: mybinder.org or Google collabs
+### Method 1: mybinder.org or Google collab
 
 **recommended method (run via webapp, no installation required)**
 
 Visit https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb or https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/ClimServ%20Intro.ipynb
+
+Note: if using google collab, you will need to manually copy the
+[datasets](https://github.com/jfallon1997/ICEM-2023-ClimateServicesWorkshop/tree/main/datasets)
+folder from github, before running the notebook.
 
 ### Method 2: using conda
 
