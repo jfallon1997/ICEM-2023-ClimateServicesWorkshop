@@ -1,6 +1,7 @@
 # ICEM 2023 workshop on Climate Services
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/ClimServ%20Intro.ipynb)
 
 Instructions are currently a work in progress.
 
@@ -8,36 +9,43 @@ For more information on the workshop and related pages, visit [https://linktr.ee
 
 ## Using the notebook
 
+*Please note, if the notebook has a window popup about a validation error warning, it is safe to ignore this and click continue anyway*.
+
 ### Recommended method
 
-Use the [interactive slides in the web browser (no additional setup required) via mybinder.org](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb)
+Use the interactive slides in the web browser (no additional setup required) [via mybinder.org](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb) or [via Google collabs](https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/ClimServ%20Intro.ipynb)
 
-### Advanced method:
+### Code snippets method
 
-Follow the instructions below to setup python, download data, and optionally install RISE (for presentation viewing mode). 
+It is possible to view the notebook on github, or view the PDF version.
 
-Once `python` is setup (see method 2 or method 3), clone this github repo:
+### Advanced method
 
-```sh
-cd path_to_my_preferred_directory
-git clone https://github.com/jfallon1997/ICEM-2023-ClimateServicesWorkshop.git
-cd ICEM-2023-ClimateServicesWorkshop
-```
+*If you haven't yet run the [python setup][#python-setup] instructions, skip there first!*
 
-Ensure that your python environment is activated:
+With `python` setup with the correct packages installed, you are now ready to run the workshop notebook.
+
+First, ensure that your python environment is activated:
 
 ```sh
-# method 2
+# method 2 (using anaconda)
 conda activate icem
 
 # alternatively, method 3
 # windows
-source ./icem/bin/activate
+.\icem/Scripts\activate
 # mac/linux
 source icem/bin/activate
 ```
 
-and finally launch the notebook with:
+Next, download the notebook if you haven't already. Either click the green "code" button above on github and download everything as a compressed zip file, or if you prefer you can clone the repo:
+
+```sh
+git clone https://github.com/jfallon1997/ICEM-2023-ClimateServicesWorkshop.git
+cd ICEM-2023-ClimateServicesWorkshop
+```
+
+And finally, launch the notebook with:
 
 ```sh
 jupyter notebook "ClimServ Intro.ipynb"
@@ -45,22 +53,22 @@ jupyter notebook "ClimServ Intro.ipynb"
 
 ## Python setup
 
-### Method 1: mybinder.org
+### Method 1: mybinder.org or Google collabs
 
 **recommended method (run via webapp, no installation required)**
 
-Visit https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb
+Visit https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb or https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/ClimServ%20Intro.ipynb
 
 ### Method 2: using conda
 
-**(use this installation method if you are familiar with using conda)**
+**(only use this installation method if you are familiar with using conda)**
 
 Ensure that you install the required packages with [conda](https://docs.conda.io/en/latest) or [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html):
 
 ```sh
 conda create -n icem
 conda activate icem
-conda install -c conda-forge jupyter pandas xarray rioxarray scipy matplotlib rasterio
+conda install -c conda-forge jupyter pandas xarray rioxarray matplotlib rasterio
 ```
 
 And in future access the packages using
@@ -73,30 +81,35 @@ conda activate icem
 
 **(use this installation method if you are not familiar with using conda)**
 
-Please ensure you have the following packages installed:
+Create a `python venv` (note that this will create a new directory `icem` where the `venv` is stored):
 
 ```sh
 # windows
 py -m venv icem
-source ./icem/bin/activate
-py -m pip install jupyter pandas xarray rioxarray scipy matplotlib rasterio
-
 # mac/linux
 python3 -m venv icem
-source icem/bin/activate
-python3 -m pip install jupyter pandas xarray rioxarray scipy matplotlib rasterio
 ```
 
-And in future, access the packages using
+Activate the new `venv` that you have created:
 
 ```sh
 # windows
-source ./icem/bin/activate
+.\icem/Scripts\activate
 # mac/linux
 source icem/bin/activate
 ```
-For more help on pip, see https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments
 
+Lastly you need to install required packages:
+
+```sh
+# windows
+py -m pip install jupyter pandas xarray rioxarray matplotlib rasterio
+
+# mac/linux
+python3 -m pip install jupyter pandas xarray rioxarray matplotlib rasterio
+```
+
+For more help on pip, see https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments
 
 ## Downloading Data
 
@@ -104,14 +117,25 @@ For more help on pip, see https://packaging.python.org/en/latest/guides/installi
 
 NASA POWER DAVe can be accessed at https://power.larc.nasa.gov/beta/data-access-viewer
 
-In the example notebook, data spanning *2022-01-29* to *2023-01-28* at *039.48N*, *073.59W* is saved in `netCDF4` format as `datasets/POWER_Point_Hourly_20220129_20230128_039d48N_073d59W_LST.nc`, although different dates/regions may be used.
+In the example notebook, data spanning *01/29/2022* to *01/28/2023* at *+039.48*, *-073.59* is saved in `netCDF4` format as `datasets/reanalysis/POWER_Point_Hourly_20220129_20230128_039d48N_073d59W_LST.nc`, although different dates/regions may be used.
 
 ### Observations LiDAR measurements
 
-LiDAR measurements are obtained from NYSERDA Floating LiDAR Buoy Data:
-https://oswbuoysny.resourcepanorama.dnv.com
+LiDAR measurements are obtained from NYSERDA Floating LiDAR Buoy Data: https://oswbuoysny.resourcepanorama.dnv.com
+
+> OceanTech Services/DNV under contract to NYSERDA have kindly provided this data free of charge. Neither NYSERDA nor OceanTech Services/DNV have reviewed the information contained herein and the opinions in this report do not necessarily reflect those of any of these parties.
 
 In the example notebook, we download `CSV` formatted dataset `E05_Hudson_South_West_10_min_avg_20220129_20230128.csv` and save in the directory `datasets/NYSERDA Floating LiDAR Buoy Data/`
+
+### Global Wind Atlas
+
+Global Wind Atlas makes many outputs freely available via api:
+
+```
+https://globalwindatlas.info/api/gis/country/DNK/wind-speed/100
+https://globalwindatlas.info/api/gis/country/DNK/elevation_w_bathymetry
+https://globalwindatlas.info/api/gis/country/ITA/wind-speed/100
+```
 
 ## RISE
 
@@ -119,7 +143,7 @@ Use RISE to view the notebook as a series of interactive slides (as in the works
 
 ### Installation
 
-To install RISE (ensure the correct venv is activated first, see previous instructions):
+To install RISE:
 
 ```sh
 # windows
