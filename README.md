@@ -25,7 +25,7 @@ It is possible to view the notebook on github, or view the PDF version.
 
 ### Advanced method
 
-*If you haven't yet run the [python setup][#python-setup] instructions, skip there first!*
+*If you haven't yet run the [python setup](#python-setup) instructions, skip there first!*
 
 With `python` setup with the correct packages installed, you are now ready to run the workshop notebook.
 
