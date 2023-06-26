@@ -1,7 +1,7 @@
 # ICEM 2023 workshop on Climate Services
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/ClimServ%20Intro.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb)
 
 Instructions are currently a work in progress.
 
@@ -13,7 +13,7 @@ For more information on the workshop and related pages, visit [https://linktr.ee
 
 ### Recommended method
 
-Use the interactive slides in the web browser (no additional setup required) [via mybinder.org](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb) or [via Google collab](https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/ClimServ%20Intro.ipynb)
+Use the interactive slides in the web browser (no additional setup required) [via mybinder.org](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb) or [via Google collab](https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb)
 
 Note: if using google collab, you will need to manually copy the
 [datasets](https://github.com/jfallon1997/ICEM-2023-ClimateServicesWorkshop/tree/main/datasets)
@@ -52,7 +52,7 @@ cd ICEM-2023-ClimateServicesWorkshop
 And finally, launch the notebook with:
 
 ```sh
-jupyter notebook "ClimServ Intro.ipynb"
+jupyter notebook "Climate Services Workshop ICEM23 JJJ.ipynb"
 ```
 
 ## Python setup
@@ -61,7 +61,7 @@ jupyter notebook "ClimServ Intro.ipynb"
 
 **recommended method (run via webapp, no installation required)**
 
-Visit https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=ClimServ%20Intro.ipynb or https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/ClimServ%20Intro.ipynb
+Visit https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb or https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb
 
 Note: if using google collab, you will need to manually copy the
 [datasets](https://github.com/jfallon1997/ICEM-2023-ClimateServicesWorkshop/tree/main/datasets)
@@ -172,19 +172,19 @@ Note: RISE is only compatible with `jupyter notebook` and will not yet work with
 #### Option 1: Export to HTML
 
 ```sh
-jupyter nbconvert "ClimServ Intro.ipynb" --to slides --reveal-prefix reveal.js
+jupyter nbconvert "Climate Services Workshop ICEM23 JJJ.ipynb" --to slides --reveal-prefix reveal.js
 ```
 
 or if `reveal.js` is not installed:
 
 ```sh
-jupyter nbconvert "ClimServ Intro.ipynb" --to slides --reveal-prefix "http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0"
+jupyter nbconvert "Climate Services Workshop ICEM23 JJJ.ipynb" --to slides --reveal-prefix "http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0"
 ```
 
 #### Option 2: Export to PDF
 
 ```sh
-jupyter nbconvert "ClimServ Intro.ipynb" --to slides --post serve
+jupyter nbconvert "Climate Services Workshop ICEM23 JJJ.ipynb" --to slides --post serve
 ```
 
 Add `?print-pdf` to the query `url` and save the destination `pdf` file, or alternatively open the page and print to PDF
