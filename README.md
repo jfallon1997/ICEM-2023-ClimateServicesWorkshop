@@ -145,6 +145,9 @@ https://globalwindatlas.info/api/gis/country/DNK/elevation_w_bathymetry
 https://globalwindatlas.info/api/gis/country/ITA/wind-speed/100
 ```
 
+See also video tutorials on GWA:
+<https://globalwindatlas.info/en/about/VideoTutorials>
+
 ## RISE
 
 Use RISE to view the notebook as a series of interactive slides (as in the workshop). Using RISE is completely optional - if skipped the notebook will fallback as a regular jupyter notebook.
