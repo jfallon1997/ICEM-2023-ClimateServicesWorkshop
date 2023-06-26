@@ -13,9 +13,9 @@ For more information on the workshop and related pages, visit [https://linktr.ee
 
 ### Recommended method
 
-Use the interactive slides in the web browser (no additional setup required) [via mybinder.org](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb) or [via Google collab](https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb)
+Use the interactive slides in the web browser (no additional setup required) [via mybinder.org](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb) or [via Google colab](https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb)
 
-Note: if using google collab, you will need to manually copy the
+Note: if using google colab, you will need to manually copy the
 [datasets](https://github.com/jfallon1997/ICEM-2023-ClimateServicesWorkshop/tree/main/datasets)
 folder from github, before running the notebook.
 
@@ -57,13 +57,13 @@ jupyter notebook "Climate Services Workshop ICEM23 JJJ.ipynb"
 
 ## Python setup
 
-### Method 1: mybinder.org or Google collab
+### Method 1: mybinder.org or Google colab
 
 **recommended method (run via webapp, no installation required)**
 
 Visit https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb or https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb
 
-Note: if using google collab, you will need to manually copy the
+Note: if using google colab, you will need to manually copy the
 [datasets](https://github.com/jfallon1997/ICEM-2023-ClimateServicesWorkshop/tree/main/datasets)
 folder from github, before running the notebook.
 
