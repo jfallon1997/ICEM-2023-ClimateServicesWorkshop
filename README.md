@@ -1,4 +1,6 @@
-# ICEM 2023 workshop on Climate Services
+# NextGen24 Methods for climate effects in energy system models
+
+**Based on ICEM 2023 workshop on Climate Services**
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb)
