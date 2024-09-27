@@ -2,30 +2,9 @@
 
 **Based on ICEM 2023 workshop on Climate Services**
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb)
-
-Instructions are currently a work in progress.
-
-For more information on the workshop and related pages, visit [https://linktr.ee/ICEM23ClimateServices](https://linktr.ee/ICEM23ClimateServices)
-
 ## Using the notebook
 
 *Please note, if the notebook has a window popup about a validation error warning, it is safe to ignore this and click continue anyway*.
-
-### Recommended method
-
-Use the interactive slides in the web browser (no additional setup required) [via mybinder.org](https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb) or [via Google colab](https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb)
-
-Note: if using google colab, you will need to manually copy the
-[datasets](https://github.com/jfallon1997/ICEM-2023-ClimateServicesWorkshop/tree/main/datasets)
-folder from github, before running the notebook.
-
-### Code snippets method
-
-It is possible to view the notebook on github, or view the PDF version.
-
-### Advanced method
 
 *If you haven't yet run the [python setup](#python-setup) instructions, skip there first!*
 
@@ -34,7 +13,7 @@ With `python` setup with the correct packages installed, you are now ready to ru
 First, ensure that your python environment is activated:
 
 ```sh
-# method 2 (using anaconda)
+# method 2 (using anaconda or mamba)
 conda activate icem
 
 # alternatively, method 3
@@ -51,27 +30,19 @@ git clone https://github.com/jfallon1997/ICEM-2023-ClimateServicesWorkshop.git
 cd ICEM-2023-ClimateServicesWorkshop
 ```
 
+to get the nextgen24 branch:
+
+```sh
+git checkout nextgen24
+```
+
 And finally, launch the notebook with:
 
 ```sh
-jupyter notebook "Climate Services Workshop ICEM23 JJJ.ipynb"
+jupyter notebook "Climate Services Workshop NextGen24.ipynb"
 ```
 
 ## Python setup
-
-### Method 1: mybinder.org or Google colab
-
-**recommended method (run via webapp, no installation required)**
-
-Visit https://mybinder.org/v2/gh/jfallon1997/ICEM-2023-ClimateServicesWorkshop/HEAD?labpath=Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb or https://colab.research.google.com/github/jfallon1997/ICEM-2023-ClimateServicesWorkshop/blob/main/Climate%20Services%20Workshop%20ICEM23%20JJJ.ipynb
-
-Note: if using google colab, you will need to manually copy the
-[datasets](https://github.com/jfallon1997/ICEM-2023-ClimateServicesWorkshop/tree/main/datasets)
-folder from github, before running the notebook.
-
-### Method 2: using conda
-
-**(only use this installation method if you are familiar with using conda)**
 
 Ensure that you install the required packages with [conda](https://docs.conda.io/en/latest) or [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html):
 
@@ -87,7 +58,7 @@ And in future access the packages using
 conda activate icem
 ```
 
-### Method 3: using pip
+### Alternative method: pip
 
 **(use this installation method if you are not familiar with using conda)**
 
@@ -174,19 +145,19 @@ Note: RISE is only compatible with `jupyter notebook` and will not yet work with
 #### Option 1: Export to HTML
 
 ```sh
-jupyter nbconvert "Climate Services Workshop ICEM23 JJJ.ipynb" --to slides --reveal-prefix reveal.js
+jupyter nbconvert "Climate Services Workshop NextGen24.ipynb" --to slides --reveal-prefix reveal.js
 ```
 
 or if `reveal.js` is not installed:
 
 ```sh
-jupyter nbconvert "Climate Services Workshop ICEM23 JJJ.ipynb" --to slides --reveal-prefix "http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0"
+jupyter nbconvert "Climate Services Workshop NextGen24.ipynb" --to slides --reveal-prefix "http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0"
 ```
 
 #### Option 2: Export to PDF
 
 ```sh
-jupyter nbconvert "Climate Services Workshop ICEM23 JJJ.ipynb" --to slides --post serve
+jupyter nbconvert "Climate Services Workshop NextGen24.ipynb" --to slides --post serve
 ```
 
 Add `?print-pdf` to the query `url` and save the destination `pdf` file, or alternatively open the page and print to PDF
